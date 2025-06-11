@@ -25,4 +25,21 @@ DEPOIS DO COMMIT:
 - git revert HEAD: criou um novo commit que anulou o commit com erro.
 
 Conclusão: reset é útil localmente, antes de enviar para o GitHub, mas perigoso em equipe. 
-Revert é mais seguro em projetos colaborativos. Depois que está no GitHub.
+Revert é mais seguro em projetos colaborativos. 
+
+Testes práticos dos comandos:
+
+- git restore: Usei para desfazer modificações não comitadas em info2.txt.
+- git checkout -- nome_do_arquivo: Também restaurou a versão salva do arquivo.
+- git reset --hard HEAD~1: Removeu o último commit com a linha errada.
+- git revert HEAD: Criou um novo commit que desfez o anterior sem apagar o histórico.
+
+Reflexão:
+
+- git reset é mais seguro quando usado localmente, pois apaga commits. Evitar em repositórios compartilhados.
+- git revert é melhor quando o commit já foi enviado para o repositório remoto, pois mantém o histórico.
+
+Diferença prática:
+- Antes do commit, é mais fácil corrigir com restore ou checkout.
+- Depois do commit, precisamos usar reset ou revert, o que pode alterar o histórico ou criar novos commits.
+
