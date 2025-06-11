@@ -3,3 +3,13 @@ O que aprendi com Git até agora:
 - Fazer commits
 - Criar branches
 - Fazer merge
+
+Definições de comandos Git:
+
+- git log: Mostra o histórico de commits.
+- git status: Mostra o estado atual dos arquivos no repositório.
+- git diff: Mostra as diferenças entre arquivos modificados.
+- git restore: Restaura arquivos para o último estado confirmado.
+- git checkout: Altera branches ou restaura arquivos.
+- git reset: Move o ponteiro HEAD para um commit anterior (pode apagar commits).
+- git revert: Cria um novo commit que desfaz um commit anterior.
