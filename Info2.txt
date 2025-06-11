@@ -1,0 +1,5 @@
+O que aprendi com Git até agora:
+- Como inicializar repositórios
+- Fazer commits
+- Criar branches
+- Fazer merge
