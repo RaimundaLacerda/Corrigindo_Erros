@@ -13,3 +13,16 @@ Definições de comandos Git:
 - git checkout: Altera branches ou restaura arquivos.
 - git reset: Move o ponteiro HEAD para um commit anterior (pode apagar commits).
 - git revert: Cria um novo commit que desfaz um commit anterior.
+
+Testes com comandos de rollback:
+
+ANTES DO COMMIT:
+- git restore: usei para desfazer mudanças em info2.txt antes do commit.
+- git checkout -- arquivo: também funcionou para restaurar o arquivo antes do commit.
+
+DEPOIS DO COMMIT:
+- git reset --hard HEAD~1: apagou o último commit com erro.
+- git revert HEAD: criou um novo commit que anulou o commit com erro.
+
+Conclusão: reset é útil localmente, antes de enviar para o GitHub, mas perigoso em equipe. 
+Revert é mais seguro em projetos colaborativos. Depois que está no GitHub.
